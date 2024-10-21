@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="heading"><h1>TO-DO LIST</h1></div><hr>
+            <div class="input">
+                <input type="text" id="myText" placeholder="Enter Your Task Here" required/>
+                <!-- <input placeholder="Choose Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="taskDate" /> -->
+                <button id="addBtn" onclick="addTask()">ADD TASK</button>
+            </div>
+            <div class="mainlist">
+                <div class="list">
+                    <ul id="textContent"></ul>
+                </div>
+            </div>
+            <div class="deleteBTN">
+                <button id="delBtn" onclick="delTask()">CLEAR ALL</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
